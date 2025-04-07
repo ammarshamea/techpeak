@@ -1,0 +1,62 @@
+name: techpeak
+description: "TechPeak - Internet Service Provider"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  internet_connection_checker: ^1.0.0
+  network_info_plus: ^6.1.3
+  curved_navigation_bar: ^1.0.6
+  shared_preferences: ^2.3.2
+  get_it: ^7.6.7
+  pretty_dio_logger: ^1.4.0
+  flutter_localizations:
+    sdk: flutter
+  image_multi_type:
+    git:
+      url: https://github.com/Mohamad-Alsultan/imageMultiType
+  equatable: ^2.0.5
+  flutter_bloc: ^8.1.3
+  dartz: ^0.10.1
+  dio: ^5.7.0
+  intl: ^0.19.0
+  logger: ^2.5.0
+  change_app_package_name: ^1.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_gen_runner: ^5.3.0
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: "Lato"
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+        - asset: assets/fonts/Lato-Bold.ttf
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+  remove_alpha_ios: true
+  min_sdk_android: 21
